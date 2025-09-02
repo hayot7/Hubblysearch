@@ -1,0 +1,201 @@
+.bb11{
+  width: 50px;
+  height: 56px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.b2 {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(62, 68, 245);
+  border-radius: 30px;
+  color: white;
+}
+.b2-hover:hover{
+ transform:scale(1.5)
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+}
+.b1 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(53, 53, 53);
+  color: rgb(0, 0, 0);
+  margin-left: 1899px;
+}
+
+.a1 {
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.a2 {
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.a3 {
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.a4 {
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.a5 {
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.a6 {
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 70px;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+.button2{
+  width: 60;
+  height: 50px;
+  background-color: black;
+}
+.img11{
+  width: 40px;
+  height: 40px;
+}
+.box00{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+.imgimg{
+  margin-left: 20px;
+}
+.imgi{
+  padding-bottom: 20px;
+  padding-right: 5px;
+}
+body{
+  width: 1790px;
+  height: 600px;
+  background-image: url("https://www.grayline.com/wp-content/uploads/2025/01/shutterstock_667548661-scaled.jpg");
+  background-color: black;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.imigi1{
+  border-radius: 100px;
+}
+h3{
+  font-family: sans-serif;
+}
+.result-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.result-item:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
+}
+
+.result-item a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4dd0e1;  
+  text-decoration: none;
+}
+
+.result-item a:hover {
+  color: #00e676; 
+  text-decoration: underline;
+}
+
+.result-item p {
+  margin-top: 5px;
+  color: #f1f1f1;
+  font-size: 14px;
+  line-height: 1.4;
+}
+body {
+  background: url("https://www.grayline.com/wp-content/uploads/2025/01/shutterstock_667548661-scaled.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 15px;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.icon-grid a:hover {
+  transform: translateY(-8px) scale(1.1);
+  background: rgba(97, 94, 94, 0.25);
+}
+
+.icon-grid img {
+  width: 50px;
+  height: 50px;
+} 
+.gcse-search{
+  width: 500px;
+}
+.i{
+  border-radius: 50px;
+  padding-top: 10px;
+}
+.h{
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 1700px;
+}
+.hm{
+  padding-left: 10px;
+}

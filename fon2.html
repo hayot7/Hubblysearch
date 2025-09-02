@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Google uslubidagi qidiruv</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+
+
+<script>
+  const data = [
+    {
+      title: "HTML haqida to'liq qo'llanma",
+      url: "https://example.com/html-guide",
+      snippet: "HTML web sahifalarining asosiy tuzilishini o'rganing."
+    },
+    {
+      title: "CSS bilan dizayn qilish",
+      url: "https://example.com/css-design",
+      snippet: "Sayt dizaynini zamonaviy va chiroyli qilish uchun CSS usullari."
+    },
+    {
+      title: "JavaScript asoslari",
+      url: "https://example.com/js-basics",
+      snippet: "JavaScript yordamida interaktiv saytlar yaratishni boshlang."
+    },
+    {
+      title: "React.js darslari",
+      url: "https://example.com/react-tutorials",
+      snippet: "React kutubxonasi bilan SPA yaratishni o'rganing."
+    },
+    {
+      title: "Node.js bilan backend dasturlash",
+      url: "https://example.com/nodejs-backend",
+      snippet: "Server tomon dasturlash uchun Node.js dan foydalanish."
+    }
+  ];
+
+  const searchForm = document.getElementById("searchForm");
+  const searchInput = document.getElementById("searchInput");
+  const resultsDiv = document.getElementById("results");
+
+  function renderResults(items) {
+    resultsDiv.innerHTML = "";
+    if (items.length === 0) {
+      resultsDiv.innerHTML = "<p>Hech qanday natija topilmadi.</p>";
+      return;
+    }
+    items.forEach(item => {
+      const div = document.createElement("div");
+      div.classList.add("result-item");
+
+      const a = document.createElement("a");
+      a.href = item.url;
+      a.target = "_blank";
+      a.classList.add("result-title");
+      a.textContent = item.title;
+
+      const snippet = document.createElement("p");
+      snippet.classList.add("result-snippet");
+      snippet.textContent = item.snippet;
+
+      div.appendChild(a);
+      div.appendChild(snippet);
+
+      resultsDiv.appendChild(div);
+    });
+  }
+
+  searchForm.addEventListener("submit", function() {
+    const query = searchInput.value.trim().toLowerCase();
+    if (!query) {
+      resultsDiv.innerHTML = "<p>Iltimos, so'z kiriting.</p>";
+      return;
+    }
+
+    const filtered = data.filter(item =>
+      item.title.toLowerCase().includes(query) ||
+      item.snippet.toLowerCase().includes(query)
+    );
+
+    renderResults(filtered);
+  });
+</script>
+
+</body>
+</html>
